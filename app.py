@@ -1,5 +1,7 @@
 import streamlit as st
 API_KEY="AIzaSyAFJMTljFv06ApqqDzrX_kLnNNZleZV_MY"
+from google import genai
+client = genai.Client(api_key=API_KEY)
 # 1. 模拟 AI 核心逻辑的函数
 # 实际部署时，你需要在这里调用 Google Gemini API，并传入我们设计的 System Prompt。
 def generate_scaffolding(text, topic_type, score):
